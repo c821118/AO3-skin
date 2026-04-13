@@ -1,51 +1,208 @@
 /* --- MAIN CONTAINER & BACKGROUND --- */
-.iOS-lockscreen { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; width: 100%; max-width: 400px; min-height: 700px; margin: 20px auto; border-radius: 35px; overflow: hidden; position: relative; color: white; }
-.iOS-lockscreen .lockscreen-bg { position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%; width: auto; height: auto; transform: translate(-50%, -50%); z-index: 0; }
-.iOS-lockscreen .lockscreen-content { position: relative; z-index: 1; width: 100%; height: 100%; padding-bottom: 80px; }
+.iOS-lockscreen {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  width: 100%;
+  max-width: 400px;
+  min-height: 700px;
+  margin: 20px auto;
+  border-radius: 35px;
+  overflow: hidden;
+  position: relative;
+  color: white;
+}
+.iOS-lockscreen .lockscreen-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+.iOS-lockscreen .lockscreen-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 80px;
+}
 
-.iOS-lockscreen p { margin: 0 !important; padding: 0 !important; }
-.iOS-lockscreen .status-bar br, .iOS-lockscreen .notif-center-header br, .iOS-lockscreen .notif-header br { display: none; }
+.iOS-lockscreen p {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.iOS-lockscreen .status-bar br,
+.iOS-lockscreen .notif-center-header br,
+.iOS-lockscreen .notif-header br {
+  display: none;
+}
 
 /* status bar contains the carrier, signal strength, and battery level. */
-.iOS-lockscreen .status-bar, .iOS-lockscreen .notif-center-header, .iOS-lockscreen .notif-header,
-.iOS-lockscreen .status-bar p, .iOS-lockscreen .notif-center-header p, .iOS-lockscreen .notif-header p {
-  display: flex; justify-content: space-between; align-items: center; width: 100%; margin: 0; box-sizing: border-box;
+.iOS-lockscreen .status-bar,
+.iOS-lockscreen .notif-center-header,
+.iOS-lockscreen .notif-header,
+.iOS-lockscreen .status-bar p,
+.iOS-lockscreen .notif-center-header p,
+.iOS-lockscreen .notif-header p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
 }
-.iOS-lockscreen .status-bar { padding: 15px 25px 0; font-size: 0.8em; font-weight: 600; text-shadow: 0 1px 3px rgba(0,0,0,0.5); }
+.iOS-lockscreen .status-bar {
+  padding: 15px 25px 0;
+  font-size: 0.8em;
+  font-weight: 600;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
 
 /* --- HEADERS & TIME --- */
-.iOS-lockscreen .notif-center-header { padding: 0 20px; margin-bottom: 12px; font-weight: 600; text-shadow: 0 1px 3px rgba(0,0,0,0.4); }
-.iOS-lockscreen .time-container { text-align: center; margin: 30px 0; text-shadow: 0 2px 10px rgba(0,0,0,0.3); }
-.iOS-lockscreen .time-container span { display: block; }
-.iOS-lockscreen .time-container .date { font-size: 1.1em; font-weight: 500; margin-bottom: 2px; }
-.iOS-lockscreen .time-container .time { font-size: 4.8em; font-weight: 200; line-height: 1; letter-spacing: -2px; }
+.iOS-lockscreen .notif-center-header {
+  padding: 0 20px;
+  margin-bottom: 12px;
+  font-weight: 600;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+.iOS-lockscreen .time-container {
+  text-align: center;
+  margin: 30px 0;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+.iOS-lockscreen .time-container span {
+  display: block;
+}
+.iOS-lockscreen .time-container .date {
+  font-size: 1.1em;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+.iOS-lockscreen .time-container .time {
+  font-size: 4.8em;
+  font-weight: 200;
+  line-height: 1;
+  letter-spacing: -2px;
+}
 
 /* --- CLOSE BUTTONS --- */
-.iOS-lockscreen .close-btn, .iOS-lockscreen .round-btn { display: flex; align-items: center; justify-content: center; border-radius: 50%; }
-.iOS-lockscreen .close-btn { background: rgba(255, 255, 255, 0.2); width: 24px; height: 24px; font-size: 0.8em; }
+.iOS-lockscreen .close-btn,
+.iOS-lockscreen .round-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.iOS-lockscreen .close-btn {
+  background: rgba(255, 255, 255, 0.2);
+  width: 24px;
+  height: 24px;
+  font-size: 0.8em;
+}
 
- /* --- BOTTOM SHORTCUTS --- */
-.iOS-lockscreen .bottom-bar { position: absolute; bottom: 25px; left: 0; width: 100%; padding: 0 40px; box-sizing: border-box; display: flex; justify-content: space-between; z-index: 2; }
-.iOS-lockscreen .round-btn { width: 50px; height: 50px; background-color: rgba(0, 0, 0, 0.6); }
-.iOS-lockscreen .round-btn::after { content: ""; width: 24px; height: 24px; background-position: center; background-repeat: no-repeat; background-size: contain; filter: invert(1); }
-.iOS-lockscreen .round-btn.flashlight::after { background-image: url('https://raw.githubusercontent.com/c821118/AO3-skin/refs/heads/main/icon/flashlight_Freepik.png'); }
-.iOS-lockscreen .round-btn.camera::after { background-image: url('https://raw.githubusercontent.com/c821118/AO3-skin/refs/heads/main/icon/camera_Freepik.png'); }
+/* --- BOTTOM SHORTCUTS --- */
+.iOS-lockscreen .bottom-bar {
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  width: 100%;
+  padding: 0 40px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+}
+.iOS-lockscreen .round-btn {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.iOS-lockscreen .round-btn::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  filter: invert(1);
+}
+.iOS-lockscreen .round-btn.flashlight::after {
+  background-image: url("https://raw.githubusercontent.com/c821118/AO3-skin/refs/heads/main/icon/flashlight_Freepik.png");
+}
+.iOS-lockscreen .round-btn.camera::after {
+  background-image: url("https://raw.githubusercontent.com/c821118/AO3-skin/refs/heads/main/icon/camera_Freepik.png");
+}
 
 /* --- NOTIFICATIONS --- */
-.iOS-lockscreen .notif-list { padding: 0 10px; }
-.iOS-lockscreen .notif-box { background-color: rgba(255, 255, 255, 0.95); border-radius: 20px; padding: 12px; margin-bottom: 8px; display: flex; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); }
-.iOS-lockscreen .notif-content { flex-grow: 1; display: flex; flex-direction: column; justify-content: center; }
-.iOS-lockscreen .notif-header { margin-bottom: 2px; }
-.iOS-lockscreen .notif-title { font-weight: 600; font-size: 0.95em; color: #000; }
-.iOS-lockscreen .notif-time { font-size: 0.75em; color: rgba(0, 0, 0, 0.5); }
-.iOS-lockscreen .notif-message { display: block; font-size: 0.9em; color: rgba(0, 0, 0, 0.8); line-height: 1.3; }
+.iOS-lockscreen .notif-list {
+  padding: 0 10px;
+}
+.iOS-lockscreen .notif-box {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 12px;
+  margin-bottom: 8px;
+  display: flex;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.iOS-lockscreen .notif-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.iOS-lockscreen .notif-header {
+  margin-bottom: 2px;
+}
+.iOS-lockscreen .notif-title {
+  font-weight: 600;
+  font-size: 0.95em;
+  color: #000;
+}
+.iOS-lockscreen .notif-time {
+  font-size: 0.75em;
+  color: rgba(0, 0, 0, 0.5);
+}
+.iOS-lockscreen .notif-message {
+  display: block;
+  font-size: 0.9em;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 1.3;
+}
 
 /* App Icons */
-.iOS-lockscreen .notif-icon { width: 38px; height: 38px; border-radius: 8px; background-color: #fff; background-position: center; background-repeat: no-repeat; background-size: cover; display: flex; align-items: center; justify-content: center; flex-shrink: 0; overflow: hidden; margin-right: 12px; }
+.iOS-lockscreen .notif-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  background-color: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  overflow: hidden;
+  margin-right: 12px;
+}
 
 /* Specific App Icons */
-.iOS-lockscreen .notif-icon.imessage { background-image: url('https://raw.githubusercontent.com/c821118/AO3-skin/refs/heads/main/icon/imessage_ViconsDesign.png'); }
-.iOS-lockscreen .notif-icon.gmail { background-image: url('https://raw.githubusercontent.com/c821118/AO3-skin/refs/heads/main/icon/gmail_Freepik.png'); background-size: 75%; } /* Override scaling ratio for Gmail */
-.iOS-lockscreen .notif-icon.instagram { background-image: url('https://raw.githubusercontent.com/c821118/AO3-skin/refs/heads/main/icon/instagram_cobynecz.png'); }
-.iOS-lockscreen .notif-icon.threads { background-image: url('https://raw.githubusercontent.com/c821118/AO3-skin/refs/heads/main/icon/threads_Freepik.png'); }
-.iOS-lockscreen .notif-icon.twitter { background-image: url('https://raw.githubusercontent.com/c821118/AO3-skin/refs/heads/main/icon/twitter_Freepik.png'); }
+.iOS-lockscreen .notif-icon.imessage {
+  background-image: url("https://raw.githubusercontent.com/c821118/AO3-skin/refs/heads/main/icon/imessage_ViconsDesign.png");
+}
+.iOS-lockscreen .notif-icon.gmail {
+  background-image: url("https://raw.githubusercontent.com/c821118/AO3-skin/refs/heads/main/icon/gmail_Freepik.png");
+  background-size: 75%;
+} /* Override scaling ratio for Gmail */
+.iOS-lockscreen .notif-icon.instagram {
+  background-image: url("https://raw.githubusercontent.com/c821118/AO3-skin/refs/heads/main/icon/instagram_cobynecz.png");
+}
+.iOS-lockscreen .notif-icon.threads {
+  background-image: url("https://raw.githubusercontent.com/c821118/AO3-skin/refs/heads/main/icon/threads_Freepik.png");
+}
+.iOS-lockscreen .notif-icon.twitter {
+  background-image: url("https://raw.githubusercontent.com/c821118/AO3-skin/refs/heads/main/icon/twitter_Freepik.png");
+}
