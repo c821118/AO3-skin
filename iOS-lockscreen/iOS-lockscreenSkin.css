@@ -140,7 +140,7 @@
   padding: 0 10px;
 }
 .iOS-lockscreen .notif-box {
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(255, 255, 255, 0.6);
   border-radius: 20px;
   padding: 12px;
   margin-bottom: 8px;
@@ -191,14 +191,15 @@
 
 /* Specific App Icons */
 .iOS-lockscreen .notif-icon.imessage {
-  background-image: url("https://raw.githubusercontent.com/c821118/AO3-skin/refs/heads/main/icon/imessage_ViconsDesign.png");
+  background-image: url("https://raw.githubusercontent.com/c821118/AO3-skin/refs/heads/main/icon/imessage_ViconsDesign.png"); background-size: 112%;
 }
 .iOS-lockscreen .notif-icon.gmail {
   background-image: url("https://raw.githubusercontent.com/c821118/AO3-skin/refs/heads/main/icon/gmail_Freepik.png");
   background-size: 75%;
 } /* Override scaling ratio for Gmail */
 .iOS-lockscreen .notif-icon.instagram {
-  background-image: url("https://raw.githubusercontent.com/c821118/AO3-skin/refs/heads/main/icon/instagram_cobynecz.png");
+  background-image: url("https://raw.githubusercontent.com/c821118/AO3-skin/refs/heads/main/icon/instagram_cobynecz.png"); 
+  background-size: 111%;
 }
 .iOS-lockscreen .notif-icon.threads {
   background-image: url("https://raw.githubusercontent.com/c821118/AO3-skin/refs/heads/main/icon/threads_Freepik.png");
