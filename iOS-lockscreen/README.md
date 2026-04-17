@@ -10,7 +10,7 @@
 
 Code Pen: [https://codepen.io/c821118/pen/VYKVzjE](https://codepen.io/c821118/pen/VYKVzjE)
 
-Ao3 Sample:
+Ao3 Sample: [iOS Lock screen and notification by c821118](https://archiveofourown.org/works/83225591)
 
 # Wrapper
 Wrap your whole iOS lockscreen section in `iOS-lockscreen`.
