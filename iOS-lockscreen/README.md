@@ -4,7 +4,7 @@
 - [x] background image
 - [x] time and bottom button bar
 - [x] stacked notifications
-- [ ] Hide Creator's Style
+- [ ] support Hide Creator's Style
 - [ ] password
 - [ ] ?interactive?
 
