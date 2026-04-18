@@ -4,9 +4,9 @@
 - [x] background image
 - [x] time and bottom button bar
 - [x] stacked notifications
+- [x] stacked notifications animaion
 - [ ] support Hide Creator's Style
 - [ ] password
-- [ ] ?interactive?
 
 Code Pen: [https://codepen.io/c821118/pen/VYKVzjE](https://codepen.io/c821118/pen/VYKVzjE)
 
@@ -157,29 +157,43 @@ Message(`notif-message`) wrapped inside `notif-content`.
 ```
 
 #### Notification stack
+**2026.APR.18 Updated:** I updated the notification stack animation.
+
 You can create a notification stack that looks similar to the notifications that pop up when you browse your phone.
 
 > [!WARNING]
 > Make sure `notif-list` added a margin-top style since removed the giant clock.
+
 ```HTML
 <div class="notif-list" style="margin-top: 15px;">
+  <details class="notif-group"></details>
+  <div class="notif-group-content"></div>
+</div>
 ```
 
-`notif-group` place in `notif-list`.
+`notif-group` and `notif-group-content` place in `notif-list`.
+Put the LATEST notification in `<summary>` inside `<details class="notif-group">`, also the prompt text `expand-hint` to expand stack.
 
 ```HTML
 <details class="notif-group">
   <summary>
-    <!--***Put LATEST notifications here inside summary.***-->
+    <!-- the LATEST notification.-->
     <div class="notif-box"></div>
-
-    <!--***This is expand the prompt text, also inside summary***-->
+          
+    <!-- This is expand the prompt text.-->
     <span class="expand-hint">📜 Tap to expand</span>
-
   </summary>
-    <!--***Put OLD notifications here, out of the summary***-->
-    <div class="notif-box"></div>
 </details>
+```
+
+And then put OLD notifications in `notif-group-content`.
+
+```HTML
+<div class="notif-group-content">
+  <div class="notif-box"></div>
+  <div class="notif-box"></div>
+  ...
+</div>
 ```
 
 
