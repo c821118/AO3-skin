@@ -6,7 +6,6 @@
 - [x] stacked notifications
 - [x] stacked notifications animaion
 - [ ] support Hide Creator's Style
-- [ ] password
 
 Code Pen: [https://codepen.io/c821118/pen/VYKVzjE](https://codepen.io/c821118/pen/VYKVzjE)
 
