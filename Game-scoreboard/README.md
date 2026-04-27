@@ -1,8 +1,7 @@
 # Game Scoreboard
 - [x] three stars player record
 - [x] goals record
-- [x] highlight supports gif
-- [x] highlight supports Youtube video
+- [x] Highlights support GIF/YouTube video
 - [ ] supports other sports
 
 Code Pen: [https://codepen.io/c821118/pen/zxKVmjK](https://codepen.io/c821118/pen/zxKVmjK)
@@ -24,7 +23,7 @@ Wrap whole scoreboard in `<div class="scoreboard">`.
 # Header: sb-header
 The league logo and game date are wrapped in `<div class="sb-header">`.
 
-Logo using `<img class="sb-header-logo">`.
+The logo using `<img class="sb-header-logo">`.
 
 Date using `<span class="sb-header-title">`.
 
@@ -37,7 +36,7 @@ Date using `<span class="sb-header-title">`.
 
 
 # Top Section: sb-top-section
-Top section including game status, matchup information, and game informaion are wrapped in `<div class="sb-top-section">`.
+Top section including game status, matchup information, and game information are wrapped in `<div class="sb-top-section">`.
 
 Game status using `<div class="sb-status">`, this is used to indicate the current period number or whether the game has ended, "FINAL" means the game is over. 
 
@@ -73,7 +72,7 @@ The right column using `<div class="sb-scores">`.
 ```
 
 ### The Teams : sb-teams
-Both `<div class="sb-team-row">` need to be wrap in `<div class="sb-teams">`, listing the away team first, followed by the home team.
+Both `<div class="sb-team-row">` need to be wrapped in `<div class="sb-teams">`, listing the away team first, followed by the home team.
 
 The logos, names, and record of both teams are wrapped in `<div class="sb-team-row">`.
 
@@ -83,7 +82,7 @@ The logo of team using `<img class="sb-logo">`.
 
 Team name using `<span class="sb-team-name">`.
 
-The win-loss record for this season using `<span class="sb-team-record">`.
+The win-loss record for the current season using `<span class="sb-team-record">`.
 
 ```HTML
 <div class="sb-teams">
@@ -194,7 +193,7 @@ Each player is wrapped in `<div class="sb-star-row">`.
 
 Player avatar using `<img class="sb-star-img" src=" ">`.
 
-The player information are wrapped in `<div class="sb-star-info">`.
+The player information is wrapped in `<div class="sb-star-info">`.
 
 Player's name using `<div class="sb-star-name">`, team name and position using `<span class="sb-star-meta">`.
 
