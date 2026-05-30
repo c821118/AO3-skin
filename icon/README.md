@@ -11,3 +11,5 @@
 [Gmail by Freepik](https://www.flaticon.com/free-icon/gmail_5968534?term=gmail&page=1&position=2&origin=tag&related_id=5968534)
 
 [X twitter by Freepik](https://www.flaticon.com/free-icon/twitter_5968830?term=x&page=1&position=6&origin=search&related_id=5968830)
+
+[twitter-bird by Freepik](https://www.flaticon.com/free-icon/twitter_3536424?term=twitter&page=1&position=26&origin=search&related_id=3536424)
